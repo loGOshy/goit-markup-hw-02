@@ -4,33 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a lang="en" href="index.html">
-              <span>Web</span> <span>Studio</span></a
+    <header class="header">
+      <nav class="navigation">
+        <ul class="navigation-list list">
+          <li class="navigation-item">
+            <a class="logo link" lang="en" href="index.html">
+              <span class="web">Web</span> <span>Studio</span></a
             >
           </li>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+          <li class="navigation-item">
+            <a class="navigation-link link" href="">Студия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link link" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link link" href="">Контакты</a>
+          </li>
         </ul>
       </nav>
 
-      <ul>
+      <ul class="list">
         <li>
           <address>
-            <a href="mailto:info@devstudio.com">
+            <a class="header-mail link" href="mailto:info@devstudio.com">
               <img src="./images/svg/mail.svg" alt="иконка почты" />
               info@devstudio.com
             </a>
           </address>
         </li>
         <li>
-          <a href="tell:+380961111111">
+          <a class="header-tel link" href="tell:+380961111111">
             <img src="./images/svg/phone.svg" alt="иконка телефона" />
             +38 096 111 11 11
           </a>
@@ -40,44 +54,44 @@
     <main>
       <!-- HERO section -->
       <section>
-        <h1>
+        <h1 class="main-title">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button>Заказать услугу</button>
+        <button class="modal-btn">Заказать услугу</button>
       </section>
       <!-- Особенности -->
       <section>
         <h2 hidden>Особенности</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img src="./images/png/antenna.png" alt="рисунок антена" />
-            <h3>Внимание к деталям</h3>
-            <p>
+            <h3 class="feature-title">Внимание к деталям</h3>
+            <p class="feature-dasc">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
             <img src="./images/png/clock.png" alt="рисунок часы" />
-            <h3>Пунктуальность</h3>
-            <p>
+            <h3 class="feature-title">Пунктуальность</h3>
+            <p class="feature-dasc">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
             <img src="./images/png/diagram.png" alt="рисунок диаграмма" />
-            <h3>Планирование</h3>
-            <p>
+            <h3 class="feature-title">Планирование</h3>
+            <p class="feature-dasc">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
             <img src="./images/png/cosmonaut.png" alt="рисунок космонавт" />
-            <h3>Современные технологии</h3>
-            <p>
+            <h3 class="feature-title">Современные технологии</h3>
+            <p class="feature-dasc">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -86,10 +100,10 @@
       </section>
       <!-- Чем мы занимаемся -->
       <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
+        <h2 class="section-title">Чем мы занимаемся</h2>
+        <ul class="list">
           <li>
-            <a href=""
+            <a class="work-item link" href=""
               ><img
                 src="./images/jpg/img1.jpg"
                 alt="ноутбук"
@@ -100,7 +114,7 @@
             </a>
           </li>
           <li>
-            <a href=""
+            <a class="work-item link" href=""
               ><img
                 src="./images/jpg/img2.jpg"
                 alt="смартфон"
@@ -111,7 +125,7 @@
             </a>
           </li>
           <li>
-            <a href=""
+            <a class="work-item link" href=""
               ><img
                 src="./images/jpg/img3.jpg"
                 alt="монитор"
@@ -125,7 +139,7 @@
       </section>
       <!-- Наша команда -->
       <section>
-        <h2>Наша команда</h2>
+        <h2 class="section-title">Наша команда</h2>
         <ul>
           <li>
             <img
@@ -134,8 +148,8 @@
               width="270"
               height="260"
             />
-            <h3>Николай Кучеренко</h3>
-            <p lang="en">Product Designer</p>
+            <h3 class="team-man">Николай Кучеренко</h3>
+            <p class="team-man-position" lang="en">Product Designer</p>
             <ul>
               <li>
                 <a aria-label="иконка инстаграмм" href="">
@@ -169,8 +183,8 @@
               width="270"
               height="260"
             />
-            <h3>Ольга Иванова</h3>
-            <p lang="en">Frontend Developer</p>
+            <h3 class="team-man">Ольга Иванова</h3>
+            <p class="team-man-position" lang="en">Frontend Developer</p>
             <ul>
               <li>
                 <a aria-label="иконка инстаграмм" href="">
@@ -204,8 +218,8 @@
               width="270"
               height="260"
             />
-            <h3>Андрей Шевченко</h3>
-            <p lang="en">Marketing</p>
+            <h3 class="team-man">Андрей Шевченко</h3>
+            <p class="team-man-position" lang="en">Marketing</p>
             <ul>
               <li>
                 <a aria-label="иконка инстаграмм" href="">
@@ -239,8 +253,8 @@
               width="270"
               height="260"
             />
-            <h3>Иван Николаев</h3>
-            <p lang="en">UI Designer</p>
+            <h3 class="team-man">Иван Николаев</h3>
+            <p class="team-man-position" lang="en">UI Designer</p>
             <ul>
               <li>
                 <a aria-label="иконка инстаграмм" href="">
@@ -271,8 +285,8 @@
       </section>
       <!-- Постоянные клиенты -->
       <section>
-        <h2>Постоянные клиенты</h2>
-        <ul>
+        <h2 class="section-title">Постоянные клиенты</h2>
+        <ul class="list">
           <li>
             <a aria-label="имя компании 1" href=""
               ><img src="./images/svg/client1.svg" alt="иконка клиент 1"
@@ -306,38 +320,42 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div>
         <p>
-          <a lang="en" href="index.html">
-            <span>Web</span> <span>Studio</span></a
+          <a class="logo link" lang="en" href="index.html">
+            <span class="web">Web</span> <span>Studio</span></a
           >
         </p>
-        <ul>
+        <ul class="list">
           <li>
             <address>
-              <a href="https://goo.gl/maps/YSJMnHiJ8xKR7t9W9" target="_blank">
+              <a
+                class="footer-address link"
+                href="https://goo.gl/maps/YSJMnHiJ8xKR7t9W9"
+                target="_blank"
+              >
                 г. Киев, пр-т Леси Украинки, 26
               </a>
             </address>
           </li>
           <li>
             <address>
-              <a href="mailto:info@devstudio.com">
+              <a class="footer-contact link" href="mailto:info@devstudio.com">
                 info@devstudio.com
               </a>
             </address>
           </li>
           <li>
-            <a href="tell:+380961111111">
+            <a class="footer-contact" href="tell:+380961111111">
               +38 096 111 11 11
             </a>
           </li>
         </ul>
       </div>
       <div>
-        <b>присоединяйтесь</b>
-        <ul>
+        <b class="colling">присоединяйтесь</b>
+        <ul class="list">
           <li>
             <a aria-label="иконка инстаграмм" href="">
               <img src="./images/svg/instagram.svg" alt="иконка инстаграмм" />
