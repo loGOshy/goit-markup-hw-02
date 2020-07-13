@@ -75,10 +75,20 @@ p {
 .header-tel:focus {
   color: #2196f3;
 }
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* main */
 /* main HERO */
 .hero {
   text-align: center;
+  padding-top: 195px;
+  padding-bottom: 205px;
 }
 .main-title-container {
   margin-right: auto;
