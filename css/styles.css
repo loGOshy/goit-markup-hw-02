@@ -15,6 +15,7 @@ body {
 }
 .link {
   text-decoration: none;
+  display: block;
 }
 .list {
   padding: 0px;
@@ -57,6 +58,8 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .navigation-link {
@@ -74,6 +77,32 @@ p {
 .header-tel:hover,
 .header-tel:focus {
   color: #2196f3;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-item:first-child {
+  margin-right: 85px;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+.contacts-items:not(:last-child) {
+  margin-right: 30px;
 }
 
 .container {
@@ -134,6 +163,14 @@ p {
   border-color: #2196f3;
 }
 /* main features */
+.list-features {
+  display: flex;
+  justify-content: space-between;
+}
+.feature {
+  width: 270px;
+}
+
 .feature-title,
 .work-item {
   font-weight: bold;
